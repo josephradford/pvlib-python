@@ -184,7 +184,7 @@ def read_tmy3(filename, coerce_year=None, map_variables=True, encoding=None):
        Update: Users Manual. 472 pp.; NREL Report No. TP-581-41364.
        :doi:`10.2172/901864`
     .. [3] `SolarAnywhere file formats
-       <https://www.solaranywhere.com/support/historical-data/file-formats/>`_
+       <https://developers.cleanpower.com/irradiance-and-weather-data/historical-irradiance-datasets/>`_
     """  # noqa: E501
     head = ['USAF', 'Name', 'State', 'TZ', 'latitude', 'longitude', 'altitude']
 

@@ -126,14 +126,12 @@ def get_solaranywhere(latitude, longitude, api_key, start=None, end=None,
 
     References
     ----------
-    .. [1] `SolarAnywhere API
-       <https://www.solaranywhere.com/support/using-solaranywhere/api/>`_
-    .. [2] `SolarAnywhere irradiance and weather API requests
+    .. [1] `SolarAnywhere irradiance and weather API requests
        <https://developers.cleanpower.com/irradiance-and-weather-data/irradiance-and-weather-requests/>`_
-    .. [3] `SolarAnywhere API options
+    .. [2] `SolarAnywhere API options
        <https://developers.cleanpower.com/irradiance-and-weather-data/complete-schema/createweatherdatarequest/options/>`_
-    .. [4] `SolarAnywhere variable definitions
-       <https://www.solaranywhere.com/support/data-fields/definitions/>`_
+    .. [3] `SolarAnywhere variable definitions
+       <https://developers.cleanpower.com/irradiance-and-weather-data/overview-of-data-fields/>`_
     """  # noqa: E501
     headers = {'content-type': "application/json; charset=utf-8",
                'X-Api-Key': api_key,
@@ -252,7 +250,7 @@ def read_solaranywhere(filename, map_variables=True, encoding='iso-8859-1'):
     References
     ----------
     .. [1] `SolarAnywhere historical data file formats
-       <https://www.solaranywhere.com/support/historical-data/file-formats/>`_
+       <https://developers.cleanpower.com/irradiance-and-weather-data/historical-irradiance-datasets/>`_
     """
     with open(str(filename), 'r', encoding=encoding) as fbuf:
         # Extract first line of file which contains the metadata
