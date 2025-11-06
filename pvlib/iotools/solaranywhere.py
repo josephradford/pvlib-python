@@ -126,12 +126,12 @@ def get_solaranywhere(latitude, longitude, api_key, start=None, end=None,
 
     References
     ----------
-    .. [1] `SolarAnywhere irradiance and weather API requests
-       <https://developers.cleanpower.com/irradiance-and-weather-data/irradiance-and-weather-requests/>`_
-    .. [2] `SolarAnywhere API options
-       <https://developers.cleanpower.com/irradiance-and-weather-data/complete-schema/createweatherdatarequest/options/>`_
+    .. [1] `SolarAnywhere API
+       <https://www.solaranywhere.com/support/using-solaranywhere/api/>`_
+    .. [2] `SolarAnywhere API documentation
+       <https://apidocs.solaranywhere.com/>`_
     .. [3] `SolarAnywhere variable definitions
-       <https://developers.cleanpower.com/irradiance-and-weather-data/overview-of-data-fields/>`_
+       <https://www.solaranywhere.com/support/data-fields/definitions/>`_
     """  # noqa: E501
     headers = {'content-type': "application/json; charset=utf-8",
                'X-Api-Key': api_key,
